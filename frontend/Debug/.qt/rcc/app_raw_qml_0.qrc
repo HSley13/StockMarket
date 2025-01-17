@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="/QML/stockMarket/">
+    <file alias="customedModules/Main.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/Main.qml</file>
+    <file alias="customedModules/HomeWindow.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/HomeWindow.qml</file>
+    <file alias="customedModules/BackGround.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/BackGround.qml</file>
+    <file alias="customedModules/InputField.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/InputField.qml</file>
+    <file alias="customedModules/ButtonImage.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/ButtonImage.qml</file>
+    <file alias="customedModules/RoundedButton.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/RoundedButton.qml</file>
+    <file alias="customedModules/MenuPanel.qml">/Users/hsley13/Dev/QML_GO_project/frontend/customedModules/MenuPanel.qml</file>
+    <file alias="icons/search_icon.png">/Users/hsley13/Dev/QML_GO_project/frontend/icons/search_icon.png</file>
+    <file alias="icons/profile_icon.png">/Users/hsley13/Dev/QML_GO_project/frontend/icons/profile_icon.png</file>
+    <file alias="icons/home_icon.png">/Users/hsley13/Dev/QML_GO_project/frontend/icons/home_icon.png</file>
+    <file alias="icons/stats_icon.png">/Users/hsley13/Dev/QML_GO_project/frontend/icons/stats_icon.png</file>
+    <file alias="icons/filter_icon.png">/Users/hsley13/Dev/QML_GO_project/frontend/icons/filter_icon.png</file>
+  </qresource>
+</RCC>
+

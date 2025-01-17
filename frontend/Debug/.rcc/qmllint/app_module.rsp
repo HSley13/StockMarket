@@ -1,0 +1,10 @@
+-I
+/Users/hsley13/Dev/QML_GO_project/frontend/Debug
+-I
+/opt/homebrew/share/qt/qml
+--resource
+/Users/hsley13/Dev/QML_GO_project/frontend/Debug/.qt/rcc/qmake_stockMarket.qrc
+--resource
+/Users/hsley13/Dev/QML_GO_project/frontend/Debug/.qt/rcc/app_raw_qml_0.qrc
+--module
+stockMarket

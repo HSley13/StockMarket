@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QML/stockMarket">
+    <file alias="qmldir">/Users/hsley13/Dev/QML_GO_project/frontend/Debug/stockMarket/qmldir</file>
+  </qresource>
+</RCC>
+
