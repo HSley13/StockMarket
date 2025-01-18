@@ -12,12 +12,12 @@ int main(int argc, char *argv[]) {
 
     QQuickView view;
 
-    view.setSource(QUrl("qrc:/QML/stockMarket/customedModules/Main.qml"));
+    view.setSource(QUrl("qrc:/QML/stockMarket/frontend/customedModules/Main.qml"));
     view.setWidth(950);
     view.setHeight(700);
     view.show();
 
-    const QUrl SOURCE_URL{DIRECTORY.filePath("./customedModules/Main.qml")};
+    const QUrl SOURCE_URL{QUrl::fromLocalFile(DIRECTORY.filePath("./frontend/customedModules/Main.qml"))};
     FileWatcher watcher([&view, SOURCE_URL]() {
         view.engine()->clearComponentCache();
         view.setSource(SOURCE_URL);

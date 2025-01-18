@@ -12,7 +12,7 @@ Rectangle {
 
     anchors.top: parent.top;
     anchors.horizontalCenter: parent.horizontalCenter;
-    imageSource: "qrc:/QML/stockMarket/icons/search_icon.png";
+    imageSource: "qrc:/QML/stockMarket/frontend/icons/search_icon.png";
     placeHolder: "Search Companies, NFTs, Collections";
     width: parent.width * 0.3;
     height: 35;
@@ -24,7 +24,7 @@ Rectangle {
 
     anchors.top: parent.top;
     anchors.right: parent.right;
-    imageSource: "qrc:/QML/stockMarket/icons/profile_icon.png";
+    imageSource: "qrc:/QML/stockMarket/frontend/icons/profile_icon.png";
     width: 35;
     height: 35;
     anchors.margins: 10;
@@ -50,9 +50,9 @@ Rectangle {
 
     Component.onCompleted: {
       var options = [
-        { text: "Home", image_source: "qrc:/QML/stockMarket/icons/home_icon.png" },
-        { text: "Filter", image_source: "qrc:/QML/stockMarket/icons/filter_icon.png" },
-        { text: "Stats", image_source: "qrc:/QML/stockMarket/icons/stats_icon.png" }
+        { text: "Home", image_source: "qrc:/QML/stockMarket/frontend/icons/home_icon.png" },
+        { text: "Filter", image_source: "qrc:/QML/stockMarket/frontend/icons/filter_icon.png" },
+        { text: "Stats", image_source: "qrc:/QML/stockMarket/frontend/icons/stats_icon.png" }
       ];
       menuPanel.updateOptions(options);
     }

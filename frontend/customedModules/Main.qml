@@ -5,14 +5,14 @@ import stockMarket
 ScrollView {
     anchors.fill: parent;
 
+    Component{
+      id: homeWindow;
+      HomeWindow{}
+    }
+
     StackView{
         id: mainStack;
         anchors.fill: parent;
         initialItem: homeWindow;
-    }
-
-    Component{
-      id: homeWindow;
-      HomeWindow{}
     }
 }
