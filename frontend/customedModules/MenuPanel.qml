@@ -3,7 +3,7 @@ import QtQuick 2.15
 Rectangle {
   id: menuBar;
   color: "transparent";
-  property int activeIndex: 0;
+  property int activeIndex;
 
   ListView {
     anchors.fill: parent;
@@ -31,6 +31,7 @@ Rectangle {
           text: model.text;
           color: "white";
           font.pixelSize: 12;
+          font.bold: true;
           anchors.horizontalCenter: parent.horizontalCenter;
         }
       }
@@ -54,6 +55,7 @@ Rectangle {
 
       listModel.append({"text": text, "image_source": image_source});
     }
+    activeIndex = 0;
   }
 
   function handleItemClick(text) {

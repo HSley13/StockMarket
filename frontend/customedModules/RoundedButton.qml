@@ -5,7 +5,8 @@ Button{
   id: root;
 
   contentItem: Text {
-    text: root.text
+    text: root.text;
+    font.bold: true;
     opacity: enabled ? 1.0 : 0.3;
     color: "white";
     horizontalAlignment: Text.AlignHCenter;
