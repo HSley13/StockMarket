@@ -3,6 +3,7 @@ import QtQuick 2.15
 Rectangle {
   id: menuBar;
   color: "transparent";
+  property int activeIndex: 0;
 
   ListView {
     anchors.fill: parent;
@@ -13,11 +14,11 @@ Rectangle {
     delegate: Rectangle {
       height: 60;
       width: parent.width;
-      color: "transparent";
+
+      color: menuBar.activeIndex === index ? "black" : "transparent";
 
       Column {
-        anchors.top: parent.top;
-        anchors.horizontalCenter: parent.horizontalCenter;
+        anchors.centerIn: parent;
 
         RoundedImage {
           width: 30;
@@ -36,7 +37,8 @@ Rectangle {
 
       MouseArea {
         anchors.fill: parent;
-        onClicked:{ 
+        onClicked: { 
+          menuBar.activeIndex = index;
           handleItemClick(model.text);
         }
       }
@@ -58,13 +60,13 @@ Rectangle {
     switch (text) {
       case "Home":
         console.log("Home clicked")
-      break
+      break;
       case "Filter":
         console.log("Filter clicked")
-      break
+      break;
       case "Stats":
         console.log("Stats clicked")
-      break
+      break;
       default:
         console.log("Other option clicked:", text)
     }

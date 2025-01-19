@@ -23,12 +23,11 @@ BackGround{
       color: "white";
     }   
 
-    Profile{
-      id: profile;
-      anchors.top: homeWindow.top;
-      anchors.right: homeWindow.right;
-      anchors.margins: 20;
-    }
-
+    // Profile{
+    //   id: profile;
+    //   anchors.top: homeWindow.top;
+    //   anchors.right: homeWindow.right;
+    //   anchors.margins: 20;
+    // }
   }
 }

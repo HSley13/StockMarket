@@ -64,7 +64,7 @@ add_custom_target(
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -flto")
-  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s WASM=1")
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s WASM=3")
 
   include_directories(${EMSCRIPTEN}/system/include)
 

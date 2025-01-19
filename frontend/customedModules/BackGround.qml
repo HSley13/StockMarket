@@ -50,7 +50,7 @@ Rectangle {
 
     Component.onCompleted: {
       var options = [
-        { text: "Home", image_source: "qrc:/QML/stockMarket/frontend/icons/home_icon.png" },
+        { text: "Home", image_source: "qrc:/QML/stockMarket/frontend/icons/home_icon.png"},
         { text: "Filter", image_source: "qrc:/QML/stockMarket/frontend/icons/filter_icon.png" },
         { text: "Stats", image_source: "qrc:/QML/stockMarket/frontend/icons/stats_icon.png" }
       ];
