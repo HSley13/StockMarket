@@ -48,33 +48,44 @@ func fetchStockData(symbol string, apiKey string) (*StockTimeSeries, error) {
 	return &timeSeries, nil
 }
 
+func stockDataHandler(w http.ResponseWriter, r *http.Request) {
+	apiKey := os.Getenv("ALPHA_VANTAGE_API_KEY")
+	if apiKey == "" {
+		http.Error(w, "API key is not set", http.StatusInternalServerError)
+		return
+	}
+
+	symbol := r.URL.Query().Get("symbol")
+	if symbol == "" {
+		http.Error(w, "Symbol is required", http.StatusBadRequest)
+		return
+	}
+
+	timeSeries, err := fetchStockData(symbol, apiKey)
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error fetching stock data: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+
+	err = json.NewEncoder(w).Encode(timeSeries)
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error encoding JSON: %v", err), http.StatusInternalServerError)
+		return
+	}
+}
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
 
-	apiKey := os.Getenv("ALPHA_VANTAGE_API_KEY")
-	if apiKey == "" {
-		log.Fatal("API key is not set in the environment variables.")
-	}
+	http.HandleFunc("/stockdata", stockDataHandler)
 
-	symbol := "AAPL"
-	timeSeries, err := fetchStockData(symbol, apiKey)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error fetching stock data: %v\n", err)
-		os.Exit(1)
-	}
+	log.Println("Server is starting...")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 
-	fmt.Printf("Stock Information for %s\n", timeSeries.MetaData.Symbol)
-
-	for date, data := range timeSeries.TimeSeries {
-		fmt.Printf("Date: %s\n", date)
-		fmt.Printf("Open: %s\n", data.Open)
-		fmt.Printf("High: %s\n", data.High)
-		fmt.Printf("Low: %s\n", data.Low)
-		fmt.Printf("Close: %s\n", data.Close)
-		fmt.Printf("Volume: %s\n", data.Volume)
-		fmt.Println()
-	}
 }
+

@@ -1,0 +1,15 @@
+--resource
+/Users/hsley13/Dev/QML_GO_project/frontend/.qt/rcc/qmake_StockMarket.qrc
+--resource
+/Users/hsley13/Dev/QML_GO_project/frontend/.qt/rcc/app_raw_qml_0.qrc
+/QML/StockMarket/customedModules/Main.qml
+/QML/StockMarket/customedModules/HomeWindow.qml
+/QML/StockMarket/customedModules/BackGround.qml
+/QML/StockMarket/customedModules/InputField.qml
+/QML/StockMarket/customedModules/ButtonImage.qml
+/QML/StockMarket/customedModules/RoundedButton.qml
+/QML/StockMarket/customedModules/MenuPanel.qml
+/QML/StockMarket/customedModules/Profile.qml
+/QML/StockMarket/customedModules/PolarGraph.qml
+/QML/StockMarket/customedModules/CandleStick.qml
+/QML/StockMarket/customedModules/Metrics.qml

@@ -1,0 +1,321 @@
+[
+    {
+        "classes": [
+            {
+                "className": "FileWatcher",
+                "object": true,
+                "qualifiedClassName": "FileWatcher",
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "on_directory_changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "on_file_changed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FileWatcher.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "StarredSearch",
+                "object": true,
+                "qualifiedClassName": "StarredSearch",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "StarredSearch.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "StockData",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "timestamp",
+                        "notify": "timestampChanged",
+                        "read": "timestamp",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setTimestamp"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "open",
+                        "notify": "openChanged",
+                        "read": "open",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setOpen"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "close",
+                        "notify": "closeChanged",
+                        "read": "close",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setClose"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "high",
+                        "notify": "highChanged",
+                        "read": "high",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setHigh"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "low",
+                        "notify": "lowChanged",
+                        "read": "low",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setLow"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "volume",
+                        "notify": "volumeChanged",
+                        "read": "volume",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setVolume"
+                    }
+                ],
+                "qualifiedClassName": "StockData",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "timestampChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "openChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "closeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "highChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lowChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "volumeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "timestamp",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setTimestamp",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "open",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setOpen",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "close",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setClose",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "high",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setHigh",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "low",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setLow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "volume",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setVolume",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "StockDataProvider",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "stockData",
+                        "notify": "stockDataChanged",
+                        "read": "stockData",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<StockData*>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "StockDataProvider",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "stockDataChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "StockDataProvider.hpp",
+        "outputRevision": 68
+    }
+]
